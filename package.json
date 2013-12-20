@@ -1,0 +1,20 @@
+{
+  "name": "hubot-embedly",
+  "version": "1.0.0",
+  "description": "Hubot script for grabbing information about any URL from the Embed.ly service.",
+  "keywords": [
+    "hubot",
+    "embedly"
+  ],
+  "author": "Dave Reid <dave@davereid.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davereid/hubot-embedly"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "main": "index.coffee",
+  "dependencies": {
+    "hubot": ">= 2.4.0"
+  }
+}
