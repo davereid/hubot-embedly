@@ -46,30 +46,23 @@ module.exports = (robot) ->
         url: url
         format: 'json'
         chars: 80
-      .header('User-Agent', 'hubot-longurl')
       .get() (err, res, body) ->
         if err
           console.log("Error: #{err}")
         else
           response = JSON.parse body
-          #console.log(response)
           if response.type is 'error'
             console.log("Error: #{response.error_message}")
-            
           else
             reply = []
-            
             # Ignore differences in trailing slashes or http vs https
             original_url = url.replace(/^(http(?:s?):\/\/)/i, '').replace(/\/$/, '')
             new_url = response.url.replace(/^(http(?:s?):\/\/)/i, '').replace(/\/$/, '')
             if original_url isnt new_url
               reply.push(response.url)
-              
             if response.title
               reply.push(response.title)
-              
             if response.description
-              #reply.push(response.description)
-              
+              reply.push(response.description)
             if reply.length
               msg.send reply.join(' | ')
