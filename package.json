@@ -1,6 +1,6 @@
 {
   "name": "hubot-embedly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hubot script for grabbing information about any URL from the Embed.ly service.",
   "keywords": [
     "hubot",
