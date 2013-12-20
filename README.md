@@ -3,7 +3,9 @@ hubot-embedly
 
 Hubot script for grabbing information about any URL from the [Embed.ly](http://embed.ly/) service.
 
-## Installing
+[![NPM version](https://badge.fury.io/js/hubot-embedly.png)](http://badge.fury.io/js/hubot-embedly) [![Dependency check](https://david-dm.org/davereid/hubot-embedly.png)](https://david-dm.org/davereid/hubot-embedly)
+
+## Installation
 
 1. Add `hubot-embedly` as a dependency to your hubot:
     `"hubot-embedly": ""`
